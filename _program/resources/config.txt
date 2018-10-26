@@ -1,0 +1,26 @@
+#このファイルはプロジェクトの設定ファイルです。
+#ビルド時に参照されます。
+
+#コンパイルしたHTMLを出力するディレクトリを指定してください。
+#デフォルトは"output"です。
+OUTPUT_DIR = "output"
+
+#この項目は"html"、"directory"から選んでください。
+#デフォルトは"directory"です。
+OUTPUT_TYPE = "directory"
+
+#この項目には、記事一覧のjsonを生成するパスを指定してください。
+#デフォルトは"articles.json"です。
+ARTICLES_JSON = "articles.json"
+
+#この項目には、テンプレートHTMLのパスを指定してください。
+#デフォルトは"template.html"です。
+TEMPLATE_HTML = "template.html"
+
+#この項目は、シンタックスハイライトを有効にするかどうかをbool値で指定してください。
+#デフォルトはTrueです。
+ENABLE_SYNTAX_HIGHLIGHT = True
+
+#この項目には、シンタックスハイライトするコードブロックの言語プレフィクスを指定してください。
+#デフォルトは"language-"です。
+CSS_CLASS_LANGUAGE_PREFIX = "language-"
