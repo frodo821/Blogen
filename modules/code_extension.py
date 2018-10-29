@@ -1,5 +1,6 @@
 #pylint: disable=C0326, R0903, C0111, W0201
 from re import search, MULTILINE
+from html import unescape
 
 from markdown.treeprocessors import Treeprocessor
 
@@ -35,6 +36,7 @@ class CodeTreeprocessor(Treeprocessor):
     def run(self, root):
         i = 0
         for e in root.getiterator(tag='code'):
+            e.text = unescape(e.text)
             if "\n" not in e.text:
                 continue
             e.set("class", self.prefix + self.codes[i])
